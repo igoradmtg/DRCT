@@ -7,13 +7,13 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/drct-saving-image-super-resolution-away-from/image-super-resolution-on-set14-4x-upscaling)](https://paperswithcode.com/sota/image-super-resolution-on-set14-4x-upscaling?p=drct-saving-image-super-resolution-away-from)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/drct-saving-image-super-resolution-away-from/image-super-resolution-on-manga109-4x)](https://paperswithcode.com/sota/image-super-resolution-on-manga109-4x?p=drct-saving-image-super-resolution-away-from)
 
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ming053l/DRCT/issues)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/igoradmtg/DRCT/issues)
 
 
 
 ## [[Paper Link]](https://arxiv.org/abs/2404.00722) [[Project Page]](https://allproj002.github.io/drct.github.io/) [[Poster]](https://drive.google.com/file/d/1zR9wSwqCryLeKVkJfTuoQILKiQdf_Vdz/view?usp=sharing) [[Model zoo]](https://drive.google.com/drive/folders/1QJHdSfo-0eFNb96i8qzMJAPw31u9qZ7U?usp=sharing) [[Visual Results]](https://drive.google.com/drive/folders/15raaESdkHD-7cHWBVDzDitTH8_h5_0uE?usp=sharing) [[Slide]](https://docs.google.com/presentation/d/1MxPPtgQZ61GFSr3YfGOm9scm23bbbXRj/edit?usp=sharing&ouid=105932000013245886245&rtpof=true&sd=true) [[Video]](https://drive.google.com/file/d/17dB47E8I2ME-shhxAWDlQCyCuJRn79d_/view?usp=sharing)
 
-[Chih-Chung Hsu](https://cchsu.info/), [Chia-Ming Lee](https://ming053l.github.io/), [Yi-Shiuan Chou](https://nelly0421.github.io/)
+[Chih-Chung Hsu](https://cchsu.info/), [Chia-Ming Lee](https://igoradmtg.github.io/), [Yi-Shiuan Chou](https://nelly0421.github.io/)
 
 Advanced Computer Vision LAB, National Cheng Kung University
 
@@ -85,15 +85,15 @@ Showcase:
 - ✅ 2024-12-04: Update the Real-DRCT-GAN in google drive.
   
 ## Environment
-- [PyTorch >= 1.7](https://pytorch.org/) **(Recommend **NOT** using torch 1.8 and **1.12** !!! It would cause abnormal performance.)**
-- [BasicSR == 1.3.4.9](https://github.com/XPixelGroup/BasicSR/blob/master/INSTALL.md) 
+- [PyTorch >= 2.7.1](https://pytorch.org/) 
+- [BasicSR == 1.4.2](https://github.com/XPixelGroup/BasicSR/blob/master/INSTALL.md) 
 ### Installation
 ```
-git clone https://github.com/ming053l/DRCT.git
-conda create --name drct python=3.8 -y
+git clone https://github.com/igoradmtg/DRCT.git
+conda create --name drct python=3.13.5 -y
 conda activate drct
 # CUDA 11.6
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
+conda install pytorch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 cudatoolkit=11.6 -c pytorch -c conda-forge
 cd DRCT
 pip install -r requirements.txt
 python setup.py develop
